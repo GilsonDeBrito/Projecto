@@ -103,3 +103,57 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Dashboard */
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.volunteers, .opportunities {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+}
+
+.volunteers {
+  animation: slideLeft 1s ease-out;
+}
+
+.opportunities {
+  animation: slideRight 1s ease-out;
+}
+
+.stat {
+  margin-bottom: 20px;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
